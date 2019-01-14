@@ -1,3 +1,8 @@
+Peer programming Cynthia jacquelet @yacinth  /  William Spartacus @willyspa
+https://github.com/willyspa/tests-ruby
+
+exos sur Rspec (test de code)
+
 Small exercices in Ruby -- RSpec 3 Edition
 ==========
 
