@@ -6,7 +6,7 @@ end
 
 def ctof(temp_celsius)
   temp_celsius.to_f
-  temp_fahrenheit = temp_celsius*9.0/5+32 #ajout d'une virgule sur le 9 pour obtenir un float et obtenir une division acceptant les  virgules
+  temp_fahrenheit = temp_celsius*9.0/5+32 #.ajout d'une virgule sur le 9 pour obtenir un float et obtenir une division acceptant les  virgules
 return temp_fahrenheit
 end
 

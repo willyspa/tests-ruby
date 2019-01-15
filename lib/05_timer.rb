@@ -1,7 +1,12 @@
 def time_string(time)
 
-   return Time.at(time).utc.to_s[11..18]#utc transforme en format horaire 0:0:0=>00:00:00
+   return Time.at(time).utc.to_s[11..18]#.utc transforme en format horaire 0:0:0=>00:00:00
+
+
+
 =begin
+
+
   time.to_i
   sec = 0
   min = 0

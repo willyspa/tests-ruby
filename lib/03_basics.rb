@@ -64,7 +64,7 @@ def magic_array(array)
     array.sort { |x,y| x <=> y } # tri les elements du tableau de x à y
     array.each {|a| a*2} >>> fonctionne avec .map qui run chaque element
     array.reject { |a| a%3 == 0 } #a%3 compare le reste de la division euclidienne de a à 0 pour savoir si c'est un multiple de 3
-    array.uniq #retir les elements identiques du tablea
+    array.uniq #retir les élements identiques du tablea
 =end
 
     tabtemp = array.flatten

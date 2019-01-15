@@ -36,7 +36,7 @@ def factorial(nb)
 	return Math.gamma(nb+1)
 end
 
-puts factorial(0)
+
 
 
 

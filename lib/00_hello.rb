@@ -1,13 +1,16 @@
 
+
+
 def hello
-  return "Hello!"
+
+	 return "Hello!"
+   
 end
+
+
 
 def greet(name)
 
-  return "Hello, #{name}!"
+	 return "Hello, #{name}!"
 
 end
-
-greet("Alice")
-greet("Bob")

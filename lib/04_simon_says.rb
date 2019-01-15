@@ -42,7 +42,7 @@ end
 =begin
 
 def titleize(sentence)
-    #&: injecter une methode en argument map(&:capitalize) == map { |x| x.capitalize }
+    #&: injecter une méthode en argument map(&:capitalize) == map { |x| x.capitalize }
     #gsub("a", "b") : remplace a par b
    result_temp = sentence.split.map(&:capitalize).join( " " ).gsub("And", "and").gsub("The", "the")
    result = result_temp.capitalize
