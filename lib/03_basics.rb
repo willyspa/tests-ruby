@@ -1,25 +1,49 @@
 def who_is_bigger(a, b, c)
 
-    if a.nil? || b.nil? || c.nil?
-    puts "nil detected"
+    if c == nil || b == nil || c = nil
+    result = "nil detected"
 
     elsif a > b && a > c
-        puts "#{a} is bigger"
+        result = "a is bigger"
 
     elsif b > a && b > c
-        puts "#{b} is bigger"
+        result = "b is bigger"
 
-    elsif c > a && c > b
-        puts "#{c} is bigger"
+    else
+        result = "c is bigger"
 
     end
 
+return result
+
 end
+
+
+def who_is_bigger(a, b, c)
+	if a == nil || b == nil || c == nil
+		res = "nil detected"
+	else
+		if a>b && a>c
+			res = "a is bigger"
+		elsif b>c
+			res = "b is bigger"
+		else
+			res = "c is bigger"
+		end
+	end
+
+	return res
+end
+
+
+
+
 
 def reverse_upcase_noLTA(message)
 message.to_s
 result = ""
-result = message.upcase.reverse #met toutes les lettres en maj puis les retournent
+#  BOUMMMMMMMMMMM delete => L,T et A
+result = message.upcase.reverse.delete("LTA") #met toutes les lettres en maj puis les retournent
 return result
 end
 
@@ -44,6 +68,8 @@ def magic_array(array)
 =end
 
     tabtemp = array.flatten
-    tabtemp.sort{ |x,y| x <=> y }.each {|a| a*2}.reject { |a| a%3 == 0 }.uniq.sort{ |x,y| x <=> y }
+    # methode map parcours tout le tableau
+    tabtemp.sort{ |x,y| x <=> y }.map{|a| a*2}.reject { |a| a%3 == 0 }.uniq.sort{ |x,y| x <=> y }
+
 
 end

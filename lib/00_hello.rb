@@ -1,11 +1,11 @@
 
 def hello
-  return "Hello"
+  return "Hello!"
 end
 
 def greet(name)
 
-  puts "#{hello}, #{name}!"
+  return "Hello, #{name}!"
 
 end
 

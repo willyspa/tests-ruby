@@ -1,13 +1,9 @@
 def add(temp_nb1,temp_nb2)
-  temp_nb1.to_i
-  temp_nb2.to_i
   result=temp_nb1+temp_nb2
   return result
 end
 
-def substract(temp_nb1,temp_nb2)
-  temp_nb1.to_i
-  temp_nb2.to_i
+def subtract(temp_nb1,temp_nb2)
   result=temp_nb1-temp_nb2
   return result
 end
@@ -29,8 +25,24 @@ def multiply(nb1, nb2)
   return result
 end
 
+def power(nb1,nb2)
+
+  result = nb1**nb2
+  return result
+
+end
+
+def factorial(nb)
+	return Math.gamma(nb+1)
+end
+
+puts factorial(0)
+
+
+
 array=[5,7,5,5]
 puts sum(array)
 puts add(5,5)
-puts substract(5,5)
+puts subtract(5,5)
 puts multiply(6,6)
+puts power(5,2)
