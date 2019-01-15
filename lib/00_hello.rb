@@ -3,14 +3,16 @@
 
 def hello
 
-	 return "Hello!"
-   
+    result = "Hello!"
+	 return result
+
 end
 
 
 
 def greet(name)
 
-	 return "Hello, #{name}!"
+    result = "Hello, #{name}!"
+	  return result
 
 end
