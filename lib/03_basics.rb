@@ -69,6 +69,7 @@ def magic_array(array)
 
     tabtemp = array.flatten
     # methode map parcours tout le tableau
+    #remplacement du .each par map pour resoude le probleme de multiplication 
     tabtemp.sort{ |x,y| x <=> y }.map{|a| a*2}.reject { |a| a%3 == 0 }.uniq.sort{ |x,y| x <=> y }
 
 

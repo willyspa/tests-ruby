@@ -53,6 +53,7 @@ end
 =end
 
 def titleize(sentence)
+  #map(&:capitalize) is exactly the same as map { |x| x.capitalize }.
 	res = sentence.split.map(&:capitalize).map{|e| e == "The" || e == "And" ? e.downcase : e}.join(' ')
 	res[0].capitalize + res[1..-1]
 end
