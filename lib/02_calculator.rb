@@ -33,7 +33,9 @@ def power(nb1,nb2)
 end
 
 def factorial(nb)
-	return Math.gamma(nb+1)
+  result = Math.gamma(nb+1)
+
+	return result  
 end
 
 
